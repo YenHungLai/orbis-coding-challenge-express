@@ -23,7 +23,7 @@ app.get('/symbols/:symbols', (req, res) => {
 		})
 		.catch(err => {
 			console.log(err);
-			res.json(err);
+			res.send(false);
 		});
 });
 
